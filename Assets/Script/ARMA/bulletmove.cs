@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Importar para manejar escenas
 
 public class bulletmove : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
-
+    [SerializeField] private float speed;
+    // Start is called before the first frame update
     void Start()
+
     {
-        // Destruye la bala después de 2 segundos para evitar acumulación en la escena
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 2f); // Destroy the bullet after 2 seconds to prevent memory leaks
     }
 
+    // Update is called once per frame
     void Update()
     {
-        // Mueve la bala hacia adelante en su eje local
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 }
