@@ -16,16 +16,17 @@ public class PlayerAnimationController : MonoBehaviour
 
     void Update()
     {
-        
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-       
         currentHorizontal = Mathf.Lerp(currentHorizontal, horizontal, smoothTime);
         currentVertical = Mathf.Lerp(currentVertical, vertical, smoothTime);
 
-       
         animator.SetFloat("Horizontal", currentHorizontal);
         animator.SetFloat("Vertical", currentVertical);
+
+       
+        bool isCrouching = Input.GetKey(KeyCode.LeftControl);
+        animator.SetBool("isCrouching", isCrouching);
     }
 }
