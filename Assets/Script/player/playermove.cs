@@ -11,7 +11,7 @@ public class playermove : MonoBehaviour
     [SerializeField] private float _speedboost = 10;
 
     private float rotationX = 0.0f;
-    private float rotationY = 0.0f; 
+    private float rotationY = 0.0f; // Variable para la rotación vertical
     private float _posx;
     private float _posz;
     private float _posy;
@@ -24,15 +24,15 @@ public class playermove : MonoBehaviour
     
     void Update()
     {
-       
+        // Rotación de la cámara
         rotationX += Input.GetAxis("Mouse X") * sensitivity;
-        rotationY -= Input.GetAxis("Mouse Y") * sensitivity; 
-        rotationY = Mathf.Clamp(rotationY, 5f, 30f); 
+        rotationY -= Input.GetAxis("Mouse Y") * sensitivity; // Invertir el eje Y para un movimiento natural
+        rotationY = Mathf.Clamp(rotationY, 5f, 30f); // Limitar la rotación vertical
 
         transform.localRotation = Quaternion.Euler(0, rotationX, 0);
-        Camera.main.transform.localRotation = Quaternion.Euler(rotationY, 0, 0); 
+        Camera.main.transform.localRotation = Quaternion.Euler(rotationY, 0, 0); // Aplicar rotación vertical a la cámara
 
-       
+        // Movimiento del personaje
         _posx = Input.GetAxis("Horizontal") * _speed;
         _posz = Input.GetAxis("Vertical") * _speed;
         _posy = Input.GetAxis("Jump") * _speed;   
@@ -59,7 +59,7 @@ public class playermove : MonoBehaviour
         }
         else
         {
-            _speed = 5; 
+            _speed = 5; // Velocidad normal
         }
     }
 
