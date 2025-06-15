@@ -4,9 +4,11 @@ using UnityEngine;
 public class playermove : MonoBehaviour
 {
     [SerializeField] private float sensitivity = 5.0f;
-    [SerializeField] private float _speed = 5f;
-    [SerializeField] private float _speedboost = 10f;
+    [SerializeField] private float walkSpeed = 0f;
+    [SerializeField] private float crouchSpeed = 0f;
+    [SerializeField] private float speedBoost = 0f;
 
+    private float _speed = 0f;
     private float rotationX = 0.0f;
     private float rotationY = 0.0f;
     private float _posx;
@@ -30,24 +32,24 @@ public class playermove : MonoBehaviour
         
         isCrouching = Input.GetKey(KeyCode.LeftControl);
 
-      
+     
         if (isCrouching)
         {
-            _speed = 2.5f; 
+            _speed = crouchSpeed;
         }
         else if (Input.GetKey(KeyCode.LeftShift))
         {
-            _speed = _speedboost;
+            _speed = speedBoost;
         }
         else
         {
-            _speed = 5f;
+            _speed = walkSpeed;
         }
 
-      
+        
         animator.SetBool("isCrouching", isCrouching);
 
-       
+
         rotationX += Input.GetAxis("Mouse X") * sensitivity;
         rotationY -= Input.GetAxis("Mouse Y") * sensitivity;
         rotationY = Mathf.Clamp(rotationY, 5f, 30f);
@@ -55,7 +57,7 @@ public class playermove : MonoBehaviour
         transform.localRotation = Quaternion.Euler(0, rotationX, 0);
         Camera.main.transform.localRotation = Quaternion.Euler(rotationY, 0, 0);
 
-      
+     
         _posx = Input.GetAxis("Horizontal") * _speed;
         _posz = Input.GetAxis("Vertical") * _speed;
         _posy = Input.GetAxis("Jump") * _speed;
