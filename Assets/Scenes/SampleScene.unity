@@ -5051,7 +5051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58bd6296e0330f347a04634547d2ed77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 100
+  vida: 1
 --- !u!64 &1863654015
 MeshCollider:
   m_ObjectHideFlags: 0
