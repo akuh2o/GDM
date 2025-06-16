@@ -16044,6 +16044,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3962087999924249058, guid: ffb43b31c915e2148a646d7b60233ab2, type: 3}
   spawnPoint: {fileID: 758110804}
+  mainCamera: {fileID: 0}
+  aimingFOV: 30
 --- !u!114 &2065338909
 MonoBehaviour:
   m_ObjectHideFlags: 0
