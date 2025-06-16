@@ -7,20 +7,19 @@ public class Enemigo : MonoBehaviour, Idamage
 {
     [SerializeField] private int vida = 100; // Health of the enemy, default is 100
 
+
+    private void Start()
+    {
+        // Initialization code if needed
+    }
     public void TakeDamage(int damage)
     {
-        // Reduce the health by the damage amount
-        vida -= damage; // Subtract the damage from the health
-        Debug.Log("Enemy took damage: " + damage + ", remaining health: " + vida);
-
+        vida -= damage; // Reduce enemy health by the damage amount
+        Debug.Log($"Enemy took {damage} damage, remaining health: {vida}");
 
         if (vida <= 0)
         {
-            // Handle the case when the object is destroyed or dead
-
-            Destroy(gameObject); // Destroy the object when health reaches zero
-
+            Destroy(gameObject); 
         }
-      
     }
 }
