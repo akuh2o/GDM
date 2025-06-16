@@ -179,6 +179,8 @@ GameObject:
   - component: {fileID: 5494463889429491452}
   - component: {fileID: 6405908510418508735}
   - component: {fileID: 7288470205488044895}
+  - component: {fileID: 4196219627489999120}
+  - component: {fileID: -6259067099695156556}
   m_Layer: 0
   m_Name: shaft
   m_TagString: Untagged
@@ -265,3 +267,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
+--- !u!65 &4196219627489999120
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7490590622263883098}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.00059517444, y: 0.028905522, z: 0.00056605076}
+  m_Center: {x: 2.1827881e-10, y: -4.656614e-10, z: 0.0000000037252903}
+--- !u!64 &-6259067099695156556
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7490590622263883098}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1302104117611114916, guid: f631b1624bf5e7d4982e27252ea25242, type: 3}

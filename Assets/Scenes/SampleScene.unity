@@ -5051,7 +5051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58bd6296e0330f347a04634547d2ed77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 0
+  vida: 100
 --- !u!1 &1910942379
 GameObject:
   m_ObjectHideFlags: 0
@@ -5620,7 +5620,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 392647772421622620, guid: fa0e54ba7e2575c40955e6040ae9cdfc, type: 3}
       propertyPath: m_Name
-      value: troll
+      value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 392647772421622620, guid: fa0e54ba7e2575c40955e6040ae9cdfc, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     - target: {fileID: 922960375340948012, guid: fa0e54ba7e2575c40955e6040ae9cdfc, type: 3}
       propertyPath: m_LocalScale.x
