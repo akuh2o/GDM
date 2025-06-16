@@ -13,10 +13,13 @@ public class Enemigo : MonoBehaviour, Idamage
         vida -= damage; // Subtract the damage from the health
         Debug.Log("Enemy took damage: " + damage + ", remaining health: " + vida);
 
+
         if (vida <= 0)
         {
             // Handle the case when the object is destroyed or dead
+
             Destroy(gameObject); // Destroy the object when health reaches zero
+
         }
       
     }
