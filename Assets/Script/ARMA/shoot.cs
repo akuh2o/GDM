@@ -11,6 +11,11 @@ public class shoot : MonoBehaviour
     private float defaultFOV;
     private static bool isAiming = false;
 
+    [SerializeField] private AudioClip shootClip;
+    [SerializeField] private AudioClip chargeClip;
+
+    private AudioSource audioSource;
+
     void Start()
     {
         if (mainCamera == null)
@@ -21,21 +26,33 @@ public class shoot : MonoBehaviour
         {
             defaultFOV = mainCamera.fieldOfView;
         }
-    }void Update()
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+    }
+
+    void Update()
     {
         if (Input.GetMouseButtonDown(1))
         {
             isAiming = true;
-            Debug.Log("Apuntando con la mira");
+            Debug.Log("Apuntando");
             if (mainCamera != null)
             {
                 mainCamera.fieldOfView = aimingFOV;
+            }
+            if (chargeClip != null)
+            {
+                audioSource.PlayOneShot(chargeClip);
             }
         }
         if (Input.GetMouseButtonUp(1))
         {
             isAiming = false;
-            Debug.Log("Dejó de apuntar");
+            Debug.Log("DejÃ³ de apuntar");
             if (mainCamera != null)
             {
                 mainCamera.fieldOfView = defaultFOV;
@@ -45,7 +62,11 @@ public class shoot : MonoBehaviour
         if (isAiming && Input.GetMouseButtonDown(0))
         {
             Instantiate(bullet, spawnPoint.transform.position, spawnPoint.transform.rotation);
+            if (shootClip != null)
+            {
+                audioSource.PlayOneShot(shootClip);
+            }
         }
-   
     }
 }
+
