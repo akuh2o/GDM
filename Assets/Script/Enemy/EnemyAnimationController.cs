@@ -5,6 +5,7 @@ public class EnemyAnimationController : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Animator animator;
+    
 
     void Start()
     {
@@ -15,7 +16,6 @@ public class EnemyAnimationController : MonoBehaviour
     void Update()
     {
         float speed = agent.velocity.magnitude;
-        animator.SetFloat("Speed", speed);
         Debug.Log($"Speed param set to: {speed}");
     }
 }
