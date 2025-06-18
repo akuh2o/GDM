@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: -6259067099695156556}
   m_Layer: 0
   m_Name: shaft
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247568d69d553a54eaf953e70b10f0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 10
 --- !u!65 &4196219627489999120
 BoxCollider:
   m_ObjectHideFlags: 0

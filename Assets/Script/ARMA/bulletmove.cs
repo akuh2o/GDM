@@ -22,16 +22,14 @@ public class bulletmove : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+
+        Idamage enemyDamage = collision.gameObject.GetComponent<Idamage>();
+
+        if (enemyDamage != null)
         {
-            Idamage damageable = collision.gameObject.GetComponent<Idamage>();
-            if (damageable != null)
-            {
-                damageable.TakeDamage(10); // Assuming the bullet does 10 damage
-                Debug.Log("Enemy hit by bullet");
-            }
-            Destroy(gameObject); // Destroy the bullet on impact
+            enemyDamage.TakeDamage(10); // Llamar al método TakeDamage con un valor de 10
+            Debug.Log("Bullet hit: " + collision.gameObject.name);
         }
-        
+
     }
 }
