@@ -62,7 +62,7 @@ public class playermove : MonoBehaviour
 
         rotationX += Input.GetAxis("Mouse X") * sensitivity;
         rotationY -= Input.GetAxis("Mouse Y") * sensitivity;
-        rotationY = Mathf.Clamp(rotationY, 5f, 30f);
+        rotationY = Mathf.Clamp(rotationY, -30f, 60f);
 
         transform.localRotation = Quaternion.Euler(0, rotationX, 0);
         Camera.main.transform.localRotation = Quaternion.Euler(rotationY, 0, 0);

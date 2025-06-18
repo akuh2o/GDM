@@ -466,6 +466,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 69651874637213007, guid: f79a5f049f7f99840a117f7c24064821, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 799299756495887175, guid: f79a5f049f7f99840a117f7c24064821, type: 3}
       propertyPath: m_Name
       value: personaje
@@ -509,6 +513,22 @@ PrefabInstance:
     - target: {fileID: 8207271636450405485, guid: f79a5f049f7f99840a117f7c24064821, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388996114759005207, guid: f79a5f049f7f99840a117f7c24064821, type: 3}
+      propertyPath: m_margin.x
+      value: 64.353355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764552534520013660, guid: f79a5f049f7f99840a117f7c24064821, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 128.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764552534520013660, guid: f79a5f049f7f99840a117f7c24064821, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764552534520013660, guid: f79a5f049f7f99840a117f7c24064821, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.3499994
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
