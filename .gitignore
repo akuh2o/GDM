@@ -70,3 +70,39 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Samples/AI Navigation
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/.sample.json
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Unity.AI.Navigation.Samples.asmdef
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Unity.AI.Navigation.Samples.asmdef.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities/Editor/Unity.AI.Navigation.Samples.Initialization.Editor.asmdef
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities/Editor/Unity.AI.Navigation.Samples.Initialization.Editor.asmdef.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Terrains/LightmapWithFog.png.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Terrains/LightmapWithFog.png
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Terrains/Islands.asset.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Terrains/Islands.asset
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities/Editor/NavigationSampleSettingsState.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities/Editor/NavigationSampleSettingsState.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities/Editor/NavigationSampleProjectSettingsGenerator.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities/Editor/NavigationSampleProjectSettingsGenerator.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities/NavigationSampleInitializer.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities/Editor.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities/NavigationSampleInitializer.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/SpawnPrefabOnKeyDown.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/SpawnPrefabOnKeyDown.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/RandomWalk.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/RandomWalk.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/RandomInstancing.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/RandomInstancing.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/ProjectSettingsUtilities.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/Oscillator.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/Oscillator.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/NavMeshSurfaceVolumeUpdater.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/NavMeshSurfaceVolumeUpdater.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/NavigationLoop.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/NavigationLoop.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/MeshTool.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/MeshTool.cs
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/GloballyUpdatedNavMeshSurface.cs.meta
+Assets/Samples/AI Navigation/1.1.6/Build And Connect NavMesh Surfaces/Scripts/GloballyUpdatedNavMeshSurface.cs

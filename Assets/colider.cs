@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class colider : MonoBehaviour
 {
-    [SerializeField] private int vida = 10;
+    [SerializeField] public int vida = 10;
 
     // Este script debe estar en el objeto "shaft"
     public void TakeDamage(int damage)
     {
         vida -= damage;
-        Debug.Log("El enemigo ha recibido daño. Salud restante: " + vida);
+        Debug.Log("El enemigo ha recibido daï¿½o. Salud restante: " + vida);
 
         if (vida <= 0)
         {
@@ -17,12 +17,12 @@ public class colider : MonoBehaviour
         }
     }
 
-    // Detecta colisiones físicas solo con objetos con tag "Enemigo"
+    // Detecta colisiones fï¿½sicas solo con objetos con tag "Enemigo"
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemigo"))
         {
-            // Por ejemplo, cada colisión hace 5 de daño
+            // Por ejemplo, cada colisiï¿½n hace 5 de daï¿½o
             TakeDamage(5);
         }
     }
