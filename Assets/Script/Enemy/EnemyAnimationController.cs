@@ -16,6 +16,6 @@ public class EnemyAnimationController : MonoBehaviour
     void Update()
     {
         float speed = agent.velocity.magnitude;
-        Debug.Log($"Speed param set to: {speed}");
+
     }
 }
