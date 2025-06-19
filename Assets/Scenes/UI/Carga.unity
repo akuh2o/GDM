@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2182f4264c174740bc2622d4aafaa65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaADesplegar: SampleScene
+  escenaADesplegar: Nivel 1
   tiempoMinimoPantalla: 2
 --- !u!4 &476659566
 Transform:

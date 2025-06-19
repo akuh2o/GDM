@@ -4,7 +4,7 @@ using System.Collections;
 
 public class CargarEscenaConCarga : MonoBehaviour
 {
-    public string escenaADesplegar = "SampleScene"; 
+    public string escenaADesplegar = "Nivel 1"; 
     public float tiempoMinimoPantalla = 2f;
 
     void Start()
