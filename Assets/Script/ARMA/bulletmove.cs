@@ -22,6 +22,7 @@ public class bulletmove : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision == null) return;
 
         Idamage enemyDamage = collision.gameObject.GetComponent<Idamage>();
 
@@ -31,5 +32,8 @@ public class bulletmove : MonoBehaviour
             Debug.Log("Bullet hit: " + collision.gameObject.name);
         }
 
+        Destroy(gameObject); // Destruir el proyectil al colisionar con cualquier cosa
     }
+
+
 }

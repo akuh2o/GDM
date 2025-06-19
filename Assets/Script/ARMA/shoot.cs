@@ -16,6 +16,9 @@ public class shoot : MonoBehaviour
 
     private AudioSource audioSource;
 
+    [SerializeField] private float shootDelay = 2f;
+    private float lastShootTime = -Mathf.Infinity;
+
     void Start()
     {
         if (mainCamera == null)
@@ -59,13 +62,14 @@ public class shoot : MonoBehaviour
             }
         }
 
-        if (isAiming && Input.GetMouseButtonDown(0))
+        if (isAiming && Input.GetMouseButtonDown(0) && Time.time - lastShootTime >= shootDelay)
         {
-            Instantiate(bullet, spawnPoint.transform.position, spawnPoint.transform.rotation);
+            GameObject newBullet = Instantiate(bullet, spawnPoint.transform.position, spawnPoint.transform.rotation);
             if (shootClip != null)
             {
                 audioSource.PlayOneShot(shootClip);
             }
+            lastShootTime = Time.time;
         }
     }
 }
