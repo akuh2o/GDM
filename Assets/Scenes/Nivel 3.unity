@@ -11598,6 +11598,10 @@ PrefabInstance:
       propertyPath: landClip
       value: 
       objectReference: {fileID: 8300000, guid: ec3a717bbcff66848b4d15430b7e0a69, type: 3}
+    - target: {fileID: 8143967847598124198, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 9098196617277825884, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
       propertyPath: m_Name
       value: personaje

@@ -1714,6 +1714,7 @@ MonoBehaviour:
   speedBoost: 3
   walkClip: {fileID: 8300000, guid: 0fe61c8175bfe1046943565d3472e6ca, type: 3}
   jumpClip: {fileID: 8300000, guid: 902f6a275717e6e40a6fc7272f111b93, type: 3}
+  landClip: {fileID: 0}
 --- !u!114 &6721521188220965495
 MonoBehaviour:
   m_ObjectHideFlags: 0
