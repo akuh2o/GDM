@@ -21,9 +21,13 @@ public class playermove : MonoBehaviour
 
     [SerializeField] private AudioClip walkClip;
     [SerializeField] private AudioClip jumpClip;
+    [SerializeField] private AudioClip landClip;
 
     private AudioSource footstepAudioSource;
     private AudioSource jumpAudioSource;
+    private AudioSource landAudioSource;
+
+    private bool wasGrounded = true;
 
     void Start()
     {
@@ -39,6 +43,10 @@ public class playermove : MonoBehaviour
         jumpAudioSource = gameObject.AddComponent<AudioSource>();
         jumpAudioSource.loop = false;
         jumpAudioSource.playOnAwake = false;
+
+        landAudioSource = gameObject.AddComponent<AudioSource>();
+        landAudioSource.loop = false;
+        landAudioSource.playOnAwake = false;
     }
 
     void Update()
@@ -86,7 +94,9 @@ public class playermove : MonoBehaviour
 
         // AUDIO PASOS
         Vector3 horizontalVelocity = new Vector3(_posx, 0, _posz);
-        if (horizontalVelocity.magnitude > 0.1f && Physics.Raycast(transform.position, Vector3.down, 0.2f))
+        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, 0.2f);
+
+        if (horizontalVelocity.magnitude > 0.1f && isGrounded)
         {
             if (!footstepAudioSource.isPlaying || footstepAudioSource.clip != walkClip)
             {
@@ -104,9 +114,17 @@ public class playermove : MonoBehaviour
                 footstepAudioSource.Stop();
         }
 
-        if (Input.GetButtonDown("Jump") && Physics.Raycast(transform.position, Vector3.down, 0.2f))
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             jumpAudioSource.PlayOneShot(jumpClip);
         }
+
+        // SONIDO AL TOCAR EL PISO
+        if (!wasGrounded && isGrounded)
+        {
+            landAudioSource.PlayOneShot(landClip);
+        }
+
+        wasGrounded = isGrounded;
     }
 }

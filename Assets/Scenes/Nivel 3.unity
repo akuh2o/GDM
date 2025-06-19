@@ -243,6 +243,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb29c75f25696b4e843a54bbda214fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  footstepClip: {fileID: 8300000, guid: 0fe61c8175bfe1046943565d3472e6ca, type: 3}
+  player: {fileID: 7094285620543009291}
+  maxVolumeDistance: 5
+  minVolume: 0.1
 --- !u!114 &20078941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1880,6 +1884,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb29c75f25696b4e843a54bbda214fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  footstepClip: {fileID: 8300000, guid: 0fe61c8175bfe1046943565d3472e6ca, type: 3}
+  player: {fileID: 7094285620543009291}
+  maxVolumeDistance: 5
+  minVolume: 0.1
 --- !u!114 &477601916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9375,6 +9383,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb29c75f25696b4e843a54bbda214fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  footstepClip: {fileID: 8300000, guid: 0fe61c8175bfe1046943565d3472e6ca, type: 3}
+  player: {fileID: 7094285620543009291}
+  maxVolumeDistance: 5
+  minVolume: 0.1
 --- !u!1 &2481080726449307733
 GameObject:
   m_ObjectHideFlags: 0
@@ -11485,6 +11497,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3994744722112733763, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
+      propertyPath: landClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ec3a717bbcff66848b4d15430b7e0a69, type: 3}
     - target: {fileID: 9098196617277825884, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
       propertyPath: m_Name
       value: personaje
@@ -11494,6 +11510,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
+--- !u!4 &7094285620543009291 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7891264545583207602, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
+  m_PrefabInstance: {fileID: 7094285620543009290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7096516996817371351
 Transform:
   m_ObjectHideFlags: 0
