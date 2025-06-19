@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 8207271636450405485}
   m_Layer: 0
   m_Name: personaje
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4637,6 +4637,7 @@ MonoBehaviour:
   speedBoost: 3
   walkClip: {fileID: 8300000, guid: 0fe61c8175bfe1046943565d3472e6ca, type: 3}
   jumpClip: {fileID: 8300000, guid: 902f6a275717e6e40a6fc7272f111b93, type: 3}
+  landClip: {fileID: 0}
 --- !u!114 &2184173790350870022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4655,6 +4656,7 @@ MonoBehaviour:
   aimingFOV: 30
   shootClip: {fileID: 8300000, guid: d6845f9a4e208094690ce79a1e56364b, type: 3}
   chargeClip: {fileID: 8300000, guid: 84f4e827d74fcff488b36ff534cb354e, type: 3}
+  shootDelay: 2
 --- !u!1 &8593812841298879826
 GameObject:
   m_ObjectHideFlags: 0

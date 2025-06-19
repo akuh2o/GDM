@@ -770,7 +770,6 @@ GameObject:
   - component: {fileID: 1188686663758259485}
   - component: {fileID: 7960127105992337217}
   - component: {fileID: 5708195243827324770}
-  - component: {fileID: 1611029136240455763}
   - component: {fileID: 5729721940023065818}
   - component: {fileID: 753344137334733749}
   - component: {fileID: 892761194268619817}
@@ -815,7 +814,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929374953660602241}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 34bf333920b9886469ea633c17e22d4d, type: 3}
   m_Controller: {fileID: 9100000, guid: 50e102f778e6d854bb51845cca9dbe04, type: 2}
   m_CullingMode: 1
@@ -894,27 +893,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1611029136240455763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929374953660602241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d7b55c318e6f3f499b88eb2ce1a74ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRange: 5
 --- !u!114 &5729721940023065818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,7 +906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepClip: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 2074648543961188789, guid: c53739da73e708945ab9c2cbb2e382b0, type: 3}
   maxVolumeDistance: 5
   minVolume: 0.1
 --- !u!114 &753344137334733749
@@ -944,6 +922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 30
+  SCENE: Menu
 --- !u!54 &892761194268619817
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -996,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017306a130a89e0448ea010a93521671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 0}
+  _target: {fileID: 2074648543961188789, guid: c53739da73e708945ab9c2cbb2e382b0, type: 3}
   _speed: 1
 --- !u!1 &2005223113811078878
 GameObject:

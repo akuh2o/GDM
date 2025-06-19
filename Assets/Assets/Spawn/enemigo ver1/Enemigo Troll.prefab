@@ -422,6 +422,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb29c75f25696b4e843a54bbda214fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  footstepClip: {fileID: 0}
+  player: {fileID: 0}
+  maxVolumeDistance: 5
+  minVolume: 0.1
 --- !u!114 &688562268498593930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,6 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 30
+  SCENE: Menu
 --- !u!54 &2281246459574674156
 Rigidbody:
   m_ObjectHideFlags: 0
