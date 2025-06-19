@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour
+public class HUD_controller : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textLives;
     [SerializeField] TextMeshProUGUI textHealth;
@@ -28,10 +28,10 @@ public class GameController : MonoBehaviour
         //textEnemies.text = enemiesCount.ToString();
 
         playerHealth = player.GetComponent<Player>();
-        tempHealth = playerHealth.vida;
+        tempHealth = playerHealth.currentHealth;
         initialPlayerHealth = playerHealth.vida;
 
-        textHealth.text = playerHealth.vida.ToString();
+        textHealth.text = playerHealth.currentHealth.ToString();
         textLives.text = playerLives.ToString();
 
         //anim = player.GetComponent<Animator>();
@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ( tempHealth != playerHealth.vida)
+        if ( tempHealth != playerHealth.currentHealth)
         {
             UpdateHealthUI();
         }        
@@ -83,8 +83,8 @@ public class GameController : MonoBehaviour
 
     void UpdateHealthUI()
     {
-        textHealth.text = playerHealth.vida.ToString();
-        tempHealth = playerHealth.vida;
+        textHealth.text = playerHealth.currentHealth.ToString();
+        tempHealth = playerHealth.currentHealth;
     }
 
     void UpdateLivesUI()

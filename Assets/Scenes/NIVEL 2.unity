@@ -4876,6 +4876,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7679856977445960895, guid: 1d99163eaedef4843b78b589c81dabe0, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1766243619}
     - target: {fileID: 8310259880138268856, guid: 1d99163eaedef4843b78b589c81dabe0, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -6738,6 +6742,11 @@ Transform:
   - {fileID: 853301542}
   m_Father: {fileID: 770444628}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1766243619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3072374467701131719, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
+  m_PrefabInstance: {fileID: 7094285620543009290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1771548271
 GameObject:
   m_ObjectHideFlags: 0
@@ -11513,6 +11522,10 @@ PrefabInstance:
     - target: {fileID: 15245056450034594, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311304238005682126, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
+      propertyPath: vida
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3994744722112733763, guid: 21fa32b708ce3be43a33bf9c8f3a7966, type: 3}
       propertyPath: landClip

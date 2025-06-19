@@ -20,8 +20,9 @@ public class   Player : MonoBehaviour
     {
         currentHealth -= damage;
         if (animator != null)
+        {
             animator.SetTrigger("Golpeado");
-
+        }
         if (currentHealth <= 0)
         {
             Die();
@@ -32,8 +33,8 @@ public class   Player : MonoBehaviour
     {
         if (animator != null)
             animator.SetTrigger("Morir");
-        // Aquí puedes desactivar el objeto o destruirlo
-        Destroy(gameObject, 1.5f); // Espera 1.5 segundos para que la animación se reproduzca
+        // Aquï¿½ puedes desactivar el objeto o destruirlo
+        Destroy(gameObject, 1.5f); // Espera 1.5 segundos para que la animaciï¿½n se reproduzca
     }
    
 }
