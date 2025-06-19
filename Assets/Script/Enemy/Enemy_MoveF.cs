@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class Enemy_MoveF : MonoBehaviour
 {
     [SerializeField] Transform _target;
+    [SerializeField] float _speed = 1.5f; // Velocidad de movimiento del enemigo
     NavMeshAgent _agent;
     colider _vida;
     private bool _isRange = false;
@@ -36,7 +37,7 @@ public class Enemy_MoveF : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _isRange = true;
-            _agent.speed = 2;
+            _agent.speed = _speed;
         }
     }
 

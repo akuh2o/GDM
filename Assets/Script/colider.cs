@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class colider : MonoBehaviour
 {
     [SerializeField] public int vida = 10;
+    [SerializeField] private string SCENE = "Menu";
 
     // Este script debe estar en el objeto "shaft"
     public void TakeDamage(int damage)
@@ -13,6 +15,7 @@ public class colider : MonoBehaviour
         if (vida <= 0)
         {
             Destroy(gameObject);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(SCENE);
             Debug.Log("El enemigo ha sido destruido.");
         }
     }
