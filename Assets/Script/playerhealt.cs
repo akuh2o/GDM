@@ -35,6 +35,7 @@ public class   Player : MonoBehaviour
             animator.SetTrigger("Morir");
         // Aqu� puedes desactivar el objeto o destruirlo
         Destroy(gameObject, 1.5f); // Espera 1.5 segundos para que la animaci�n se reproduzca
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Derrota");
     }
    
 }
